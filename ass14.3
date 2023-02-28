@@ -1,0 +1,26 @@
+/*
+write a c program to print armstrong numbers in the given range.
+	Armstrong number is a number that is equal to the sum of cubes of its digits
+*/
+#include<stdio.h>
+main()
+{
+	int n,i,rem,rev=0,s,e,temp=0,c=0;
+	scanf("%d %d",&s,&e);
+	for(i=s;i<=e;i++)
+	{
+		int temp=i;
+	while(temp!=0)
+	{
+		rem=temp%10;
+		rev=rev+rem*rem*rem;
+		temp=temp/10;
+	}
+	if(rev==i)
+	printf("\n%d is a ARMSTRONG NUMBER",i);
+	  rev=0;
+    }
+   temp=0;
+    printf("\n");
+
+}
